@@ -1,6 +1,5 @@
 
 
-
 def linear_search(search_list, target_value):
 
     for i in range(len(search_list)):

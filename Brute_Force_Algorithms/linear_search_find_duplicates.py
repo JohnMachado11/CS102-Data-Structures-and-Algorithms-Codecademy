@@ -1,6 +1,5 @@
 
 
-
 def linear_search(search_list, target_value):
 
     matches = []
