@@ -26,9 +26,9 @@ def dijkstras(graph, start):
         for neighbor, edge_weight in graph[current_vertex]:
             new_distance = current_distance + edge_weight
         
-        if new_distance < distances[neighbor]:
-            distances[neighbor] = new_distance
-            heappush(vertices_to_explore, (new_distance, neighbor))
+            if new_distance < distances[neighbor]:
+                distances[neighbor] = new_distance
+                heappush(vertices_to_explore, (new_distance, neighbor))
             
     return distances
 
